@@ -1,0 +1,293 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 20px;
+  /*color: #5a5a5a;*/
+  background-color: white;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing h1 {
+  font-family: 'Open', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  color: #2B3856;
+  z-index: 1;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.jumbotron h1 {
+  font-family: 'Georgia', serif;
+  font-size: 55px;
+  font-weight: bold;
+  color: #2B3856;
+}
+
+.jumbotron p {
+  font-size: 22px;
+  color: black;
+}
+
+.jumbotron {
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  background-color: white;
+}
+
+.jumbotron .newcontainer {
+  text-align:left;
+  position: relative;
+  top:15px;
+  /*bottom: 15px;*/
+}
+
+
+.jumbotron ul {
+  font-size: 22px;
+  text-align: center;
+}
+
+.jumbotron ul .list {
+  text-align: left;
+  font-size: 26px;
+}
+
+/* COMMITTEE
+
+
+/* gallery */
+body.page-template-page-templatespage-gallery-php #homeGallery{
+	padding-top:36px;
+}
+body.page-template-page-templatespage-gallery-php #galleryHeader a.active{
+	color: #4ba4b3!important;
+}
+
+@media all and (max-width: 980px) {
+	#headerContent{
+		top:40%;
+	}
+}
+@media all and (max-width: 767px) {
+	#ucid_bar{
+		display:none;
+	}
+	#newsList article, #musicList article, #galleryList article{
+		width:50%;
+		padding-bottom: 50%;
+	}
+	#videoList article{
+		width:33.333%;
+		padding-bottom: 20%;
+	}
+	td.country{
+		display:none;
+	}
+	footer{
+		font-size:14px;
+	}
+	footer #lower #social2{
+		padding-top:0px;
+		margin-left:0px;
+		margin-right:15px;
+		float:right;
+	}
+	footer #lower #legals{
+		padding-top:10px;
+		clear:both;
+		float:left;
+	}
+	.videoItem h3 a{
+		font-size:15px;
+	}
+	#homeLive article table{
+		font-size:18px;
+	}
+	.newsItem h3 a{
+		font-size:15px;
+	}
+	#headerContent{
+		top:40%;
+	}
+	#headerContent h3{
+		font-size:44px; margin-bottom:8px;
+	}
+	#storyInfo{
+		text-align: left;
+		width:100%;
+		margin-bottom:10px;
+	}
+	#storyContainer{
+		float:left;
+		clear:both;
+		width:100%;
+	}
+	#livefyre-comments{
+		width: 100%;
+		float: none;
+		margin:auto;
+	}
+	nav#social{
+		display:none;
+	}
+}
+
+
+/* gallery */
+#galleryList{
+	background-color:black;
+	display:table;
+	width:100%;
+}
+#galleryList article{
+	width: 25%;
+	padding-bottom: 25%; /* 16:9 */
+	position: relative;
+	float:left;
+	background-size:cover;
+	background-position: center;
+	overflow:hidden;
+}
+#galleryList article > div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+
+	color: white;
+	font-size: 22px;
+	text-align: center;
+}
+.galleryItem div{
+}
+.galleryItem div a{
+	color:white;
+	display:block;
+}
+.galleryItem h3{
+	display:table;
+	width:100%;
+	height:170%;
+	vertical-align:bottom;
+}
+.galleryItem h3 a{
+	display:table-cell;
+	height:100%;
+	vertical-align:middle;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	text-align: center;
+	font-size:18px;
+	transition: color 0.5s ease;
+	font-size:34px;
+}
+.galleryItem h3 a:hover{
+	color:#9F0712;
+}
+.galleryItem h3 a:hover span.date{
+	color:#fff;
+	transition: color 0.5s ease;
+}
+.galleryItem h3 a span.date{
+	color:#4ba4b3;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+
+  .newcontainer {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .newcontainer {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 568px) {
+
+	#newsList article, #galleryList article{
+		width:100%;
+		padding-bottom: 60%;
+	}
+}

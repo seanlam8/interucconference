@@ -1,0 +1,138 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 20px;
+  /*color: #5a5a5a;*/
+  background-color: white;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.jumbotron h1 {
+  font-family: 'Open', sans-serif;
+  font-weight: bold;
+  color: #2B3856;
+}
+
+.jumbotron p {
+  font-size: 22px;
+  color: black;
+}
+
+.jumbotron {
+  margin-top: 30px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  background-color: white;
+}
+
+.jumbotron .newcontainer {
+  text-align:left;
+  position: relative;
+  top:15px;
+  /*bottom: 15px;*/
+}
+
+.jumbotron .newcontainer .center {
+  text-align: center;
+  list-style-position: inside;
+}
+
+.jumbotron ol {
+  font-size: 22px;
+  text-align: center;
+}
+
+.jumbotron ol .list {
+  text-align: left;
+  font-size: 26px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+
+  .newcontainer {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .newcontainer {
+    margin-top: 40px;
+  }
+}
